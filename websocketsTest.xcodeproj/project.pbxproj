@@ -13,6 +13,9 @@
 		2A87056119A9CA140087A191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A87055F19A9CA140087A191 /* Main.storyboard */; };
 		2A87056319A9CA140087A191 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A87056219A9CA140087A191 /* Images.xcassets */; };
 		2A87056F19A9CA140087A191 /* websocketsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A87056E19A9CA140087A191 /* websocketsTestTests.m */; };
+		2A87058119AAF05C0087A191 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A87058019AAF05C0087A191 /* CoreMotion.framework */; };
+		2AAD9A9719EF5B5B00B56A4A /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAD9A9519EF5B5B00B56A4A /* Launch Screen.xib */; };
+		AEF5313385BE48EB9612DF2C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CAE3AC6AA4408CADD21B4B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,13 @@
 		2A87056819A9CA140087A191 /* websocketsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = websocketsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A87056D19A9CA140087A191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A87056E19A9CA140087A191 /* websocketsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = websocketsTestTests.m; sourceTree = "<group>"; };
+		2A87057A19AA75150087A191 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A87057C19AA75230087A191 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2A87057E19AA75380087A191 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		2A87058019AAF05C0087A191 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		2AAD9A9619EF5B5B00B56A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/Launch Screen.xib"; sourceTree = "<group>"; };
+		327DCEB57C194EA3A390E610 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		96CAE3AC6AA4408CADD21B4B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A87058119AAF05C0087A191 /* CoreMotion.framework in Frameworks */,
+				AEF5313385BE48EB9612DF2C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +76,8 @@
 				2A87055419A9CA140087A191 /* websocketsTest */,
 				2A87056B19A9CA140087A191 /* websocketsTestTests */,
 				2A87055319A9CA140087A191 /* Products */,
+				327DCEB57C194EA3A390E610 /* Pods.xcconfig */,
+				47718A75ABD04977972ECA6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +100,7 @@
 				2A87055F19A9CA140087A191 /* Main.storyboard */,
 				2A87056219A9CA140087A191 /* Images.xcassets */,
 				2A87055519A9CA140087A191 /* Supporting Files */,
+				2AAD9A9519EF5B5B00B56A4A /* Launch Screen.xib */,
 			);
 			path = websocketsTest;
 			sourceTree = "<group>";
@@ -116,6 +131,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		47718A75ABD04977972ECA6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A87058019AAF05C0087A191 /* CoreMotion.framework */,
+				2A87057E19AA75380087A191 /* libicucore.dylib */,
+				2A87057C19AA75230087A191 /* UIKit.framework */,
+				2A87057A19AA75150087A191 /* CoreGraphics.framework */,
+				96CAE3AC6AA4408CADD21B4B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A87057219A9CA140087A191 /* Build configuration list for PBXNativeTarget "websocketsTest" */;
 			buildPhases = (
+				85825226C24D4F52BBC2FA8E /* Check Pods Manifest.lock */,
 				2A87054E19A9CA140087A191 /* Sources */,
 				2A87054F19A9CA140087A191 /* Frameworks */,
 				2A87055019A9CA140087A191 /* Resources */,
+				95B0276356FB4284B242FEEA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,6 +194,7 @@
 				TargetAttributes = {
 					2A87055119A9CA140087A191 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 3EQNPEVW28;
 					};
 					2A87056719A9CA140087A191 = {
 						CreatedOnToolsVersion = 6.0;
@@ -198,6 +228,7 @@
 			files = (
 				2A87056119A9CA140087A191 /* Main.storyboard in Resources */,
 				2A87056319A9CA140087A191 /* Images.xcassets in Resources */,
+				2AAD9A9719EF5B5B00B56A4A /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +240,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85825226C24D4F52BBC2FA8E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95B0276356FB4284B242FEEA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A87054E19A9CA140087A191 /* Sources */ = {
@@ -246,6 +310,14 @@
 				2A87056019A9CA140087A191 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2AAD9A9519EF5B5B00B56A4A /* Launch Screen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AAD9A9619EF5B5B00B56A4A /* Base */,
+			);
+			name = "Launch Screen.xib";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -329,23 +401,31 @@
 		};
 		2A87057319A9CA140087A191 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 327DCEB57C194EA3A390E610 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = websocketsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		2A87057419A9CA140087A191 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 327DCEB57C194EA3A390E610 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = websocketsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -402,6 +482,7 @@
 				2A87057419A9CA140087A191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A87057519A9CA140087A191 /* Build configuration list for PBXNativeTarget "websocketsTestTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +491,7 @@
 				2A87057719A9CA140087A191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
