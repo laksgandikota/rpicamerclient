@@ -27,9 +27,9 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     
-    ViewController *rootViewController = (ViewController*)self.window.rootViewController;
-    
-    [rootViewController disconnect];
+//    ViewController *rootViewController = (ViewController*)self.window.rootViewController;
+//    
+//    [rootViewController disconnect];
     
 }
 
@@ -38,9 +38,9 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    ViewController *rootViewController = (ViewController*)self.window.rootViewController;
-    
-    [rootViewController connect];
+//    ViewController *rootViewController = (ViewController*)self.window.rootViewController;
+//    
+//    [rootViewController connect];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

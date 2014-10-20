@@ -19,10 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    //[self connect];
+    [self connect];
     [self initGyro];
 }
 
+- (void)viewDidUnload {
+    [self disconnect];
+}
 //Gyro related
 
 - (void)initGyro {
